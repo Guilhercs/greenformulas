@@ -36,3 +36,27 @@ img{
   width: 30px;
   height: 30px;
 }
+
+.mobileHeader {
+  width: 100%;
+  height: 70px;
+}
+
+.logoImgMobile{
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.mobileHeader{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+/* .mobileMenu {
+  align-self: flex-end;
+} */

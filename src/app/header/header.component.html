@@ -1,18 +1,54 @@
-<header class="container">
+<header *ngIf="!showMenuButton" class="container">
   <div class="logo">
-    <img src="assets/images/logo.png" aria-hidden="true">
+    <img src="assets/images/logo.png" aria-hidden="true" />
   </div>
   <span class="pipe" aria-hidden="true"></span>
   <div class="menu">
     <a mat-button [routerLink]="'home'">INÍCIO</a>
     <a mat-button [routerLink]="'sobre'">SOBRE</a>
-    <a mat-button >SERVIÇOS</a>
-    <a mat-button >CONTATO</a>
-    <a mat-button >BLOG</a>
-    <a class="appBtn" role="button" aria-label="whatsapp" href="https://api.whatsapp.com/send?phone=5511965868650" target="_blank">
-      <img class="whatsapp-image" src="assets/images/whatsapp.png" aria-hidden="true">
+    <a mat-button>SERVIÇOS</a>
+    <a mat-button>CONTATO</a>
+    <a mat-button>BLOG</a>
+    <a
+      class="appBtn"
+      role="button"
+      aria-label="whatsapp"
+      href="https://api.whatsapp.com/send?phone=5511965868650"
+      target="_blank"
+    >
+      <img
+        class="whatsapp-image"
+        src="assets/images/whatsapp.png"
+        aria-hidden="true"
+      />
     </a>
   </div>
-
+</header>
+<header class="mobileHeader" *ngIf="showMenuButton">
+  <div class="logo-container">
+    <div class="logoMobile">
+      <img
+        class="logoImgMobile"
+        src="assets/images/logo.png"
+        aria-hidden="true"
+      />
+    </div>
+    <span class="pipe" aria-hidden="true"></span>
+  </div>
+  <button
+    class="mobileMenu"
+    mat-icon-button
+    [matMenuTriggerFor]="menu"
+    aria-label="menu"
+  >
+    <mat-icon>more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item [routerLink]="'home'">INÍCIO</button>
+    <button mat-menu-item [routerLink]="'sobre'">SOBRE</button>
+    <button mat-menu-item [routerLink]="'sobre'">SERVICO</button>
+    <button mat-menu-item [routerLink]="'sobre'">CONTATO</button>
+    <button mat-menu-item [routerLink]="'sobre'">BLOG</button>
+  </mat-menu>
 </header>
 <router-outlet></router-outlet>

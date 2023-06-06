@@ -11,6 +11,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import {MatButtonModule} from '@angular/material/button';
     MatToolbarModule,
     MatIconModule,
     MatDividerModule,
-    MatButtonModule
+    MatButtonModule,
+    MatMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
