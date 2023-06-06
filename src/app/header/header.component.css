@@ -57,6 +57,11 @@ img{
   display: flex;
   align-items: center;
 }
+.appBtnMobile{
+  background-color: transparent;
+  padding-top: 3px;
+  margin-left: 20%;
+}
 /* .mobileMenu {
   align-self: flex-end;
 } */
