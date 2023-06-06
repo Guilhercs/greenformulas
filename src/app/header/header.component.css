@@ -26,3 +26,12 @@ img{
   border: 1px solid #b1d182;
   height: 40px;
 }
+
+.appBtn {
+  background-color: transparent;
+}
+
+.whatsapp-image{
+  width: 30px;
+  height: 30px;
+}
