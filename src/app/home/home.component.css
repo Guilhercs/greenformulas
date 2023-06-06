@@ -11,10 +11,9 @@
 
 .content{
   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-right: 150px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .title{
